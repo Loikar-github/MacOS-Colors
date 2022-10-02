@@ -6,25 +6,23 @@
 //
 
 import Cocoa
+import SwifterSwift
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet var window: NSWindow!
-
+    private var colors: [Color] = {
+        let result = [
+            Color(color: .systemGray, useFor: "The text on a selected surface in a list or table.")
+        ]
+        return result
+    }()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        colors.forEach {
+            print($0)
+        }
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
-    }
-
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
-        return true
-    }
-
-
 }
 

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swifterswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwifterSwift/SwifterSwift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8ff36b66879c8d5eadfd54d2e33dafd62df6612b"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3489217F28E98ACC00AF4E2D /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3489217E28E98ACC00AF4E2D /* SwifterSwift */; };
 		3496315528E9767B00ABD34D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3496315428E9767B00ABD34D /* AppDelegate.swift */; };
 		3496315728E9767B00ABD34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3496315628E9767B00ABD34D /* Assets.xcassets */; };
 		3496315A28E9767B00ABD34D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3496315828E9767B00ABD34D /* MainMenu.xib */; };
+		34E5C6CE28E98F2B0055267F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E5C6CD28E98F2B0055267F /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,7 @@
 		3496315628E9767B00ABD34D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3496315928E9767B00ABD34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		3496315B28E9767B00ABD34D /* MacOS_colors.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacOS_colors.entitlements; sourceTree = "<group>"; };
+		34E5C6CD28E98F2B0055267F /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3489217F28E98ACC00AF4E2D /* SwifterSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				3496315428E9767B00ABD34D /* AppDelegate.swift */,
+				34E5C6CD28E98F2B0055267F /* Color.swift */,
 				3496315628E9767B00ABD34D /* Assets.xcassets */,
 				3496315828E9767B00ABD34D /* MainMenu.xib */,
 				3496315B28E9767B00ABD34D /* MacOS_colors.entitlements */,
@@ -74,6 +79,9 @@
 			dependencies = (
 			);
 			name = "MacOS-colors";
+			packageProductDependencies = (
+				3489217E28E98ACC00AF4E2D /* SwifterSwift */,
+			);
 			productName = "MacOS-colors";
 			productReference = 3496315128E9767B00ABD34D /* MacOS-colors.app */;
 			productType = "com.apple.product-type.application";
@@ -102,6 +110,9 @@
 				Base,
 			);
 			mainGroup = 3496314828E9767B00ABD34D;
+			packageReferences = (
+				3489217D28E98ACC00AF4E2D /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+			);
 			productRefGroup = 3496315228E9767B00ABD34D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3496315528E9767B00ABD34D /* AppDelegate.swift in Sources */,
+				34E5C6CE28E98F2B0055267F /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +343,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3489217D28E98ACC00AF4E2D /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3489217E28E98ACC00AF4E2D /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3489217D28E98ACC00AF4E2D /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3496314928E9767B00ABD34D /* Project object */;
 }

@@ -1,0 +1,27 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swifterswift",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/SwifterSwift/SwifterSwift.git",
+          "name" : "SwifterSwift"
+        },
+        "state" : {
+          "checkoutState" : {
+            "branch" : "master",
+            "revision" : "8ff36b66879c8d5eadfd54d2e33dafd62df6612b"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "SwifterSwift"
+      }
+    ]
+  },
+  "version" : 5
+}
